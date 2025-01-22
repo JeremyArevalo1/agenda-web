@@ -10,98 +10,261 @@
 <body class="bodyy">
 
     <nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</nav>
-      
+        <div class="container-fluid">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Telefono</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Contactos/contactos.html">Mis contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Agregar un nuevo contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactos Favoritos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lista de pendientes</a>
+                        </li>
+                    </ul>
+                    <div class="position-absolute bottom-0 end-0 m-3">
+                        <a href="" class="btn btn-danger">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+  
 
     <div class="cartas">
-
+        <!-- Card 1 -->
         <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="card">
+                <img src="assets/image/perfil111.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h5>Juaquin Figueroa</h5>
+                                <img class="imaa2" src="assets/image/logofavorito.png">
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                <ul class="list-unstyled custom-list">
+                                    <li><strong>Nombre:</strong> Juaquin</li>
+                                    <li><strong>Apellido:</strong> Figueroa</li>
+                                    <li><strong>Email:</strong> juaquinfz18@gmail.com</li>
+                                    <li><strong>Teléfono:</strong> 6656-9511</li>
+                                    <li><strong>Nota:</strong> Amigo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
         </div>
 
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card">
+                <img src="assets/image/perfil111.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <h5>Jorge Peralta</h5>
+                                <img class="imaa1" src="assets/image/logofavorito.png">
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                <ul class="list-unstyled custom-list">
+                                    <li><strong>Nombre:</strong> Jorge</li>
+                                    <li><strong>Apellido:</strong> Peralta</li>
+                                    <li><strong>Email:</strong> jorgepepa@gmail.com</li>
+                                    <li><strong>Teléfono:</strong> 0021-6547</li>
+                                    <li><strong>Nota:</strong> Amigo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card">
+                <img src="assets/image/perfil111.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <h5>Kevin Reyes</h5>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                <ul class="list-unstyled custom-list">
+                                    <li><strong>Nombre:</strong> Kevin</li>
+                                    <li><strong>Apellido:</strong> Reyes</li>
+                                    <li><strong>Email:</strong> kevinpilin@gmail.com</li>
+                                    <li><strong>Teléfono:</strong> 6654-0000</li>
+                                    <li><strong>Nota:</strong> Amigo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card">
+                <img src="assets/image/perfil111.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                              <h5>Lisandro Jimenez</h5>
+                          </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body custom-accordion-body">
+                                <ul class="list-unstyled custom-list">
+                                    <li><strong>Nombre:</strong> Lisandro</li>
+                                    <li><strong>Apellido:</strong> Jimenez</li>
+                                    <li><strong>Email:</strong> silantrojime@gmail.com</li>
+                                    <li><strong>Teléfono:</strong> 8475-3399</li>
+                                    <li><strong>Nota:</strong> Amigo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+          <div class="col">
+            <div class="card">
+                <img src="assets/image/perfil111.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                              <h5>Mabelin Gomez</h5>
+                          </button>
+                      </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                <ul class="list-unstyled custom-list">
+                                    <li><strong>Nombre:</strong> Mabelin</li>
+                                    <li><strong>Apellido:</strong> Gomez</li>
+                                    <li><strong>Email:</strong> mamamabe@gmail.com</li>
+                                    <li><strong>Teléfono:</strong> 2255-9874</li>
+                                    <li><strong>Nota:</strong> Madre</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+          <div class="col">
+            <div class="card">
+                <img src="assets/image/perfil111.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                              <h5>Jorge Arevalo</h5>
+                          </button>
+                      </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                <ul class="list-unstyled custom-list">
+                                    <li><strong>Nombre:</strong> Jorge</li>
+                                    <li><strong>Apellido:</strong> Arevalo</li>
+                                    <li><strong>Email:</strong> papajorge@gmail.com</li>
+                                    <li><strong>Teléfono:</strong> 0011-9922</li>
+                                    <li><strong>Nota:</strong> Padre</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col">
+            <div class="card">
+                <img src="assets/image/perfil111.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                              <h5>Angel Osorio</h5>
+                              <img class="imaa1" src="assets/image/logofavorito.png">
+                          </button>
+                      </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                <ul class="list-unstyled custom-list">
+                                    <li><strong>Nombre:</strong> Angel</li>
+                                    <li><strong>Apellido:</strong> Osorio</li>
+                                    <li><strong>Email:</strong> alexaleman@gmail.com</li>
+                                    <li><strong>Teléfono:</strong> 5470-3111</li>
+                                    <li><strong>Nota:</strong> Amigo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
         <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <img src="assets/image/perfil111.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                              <h5>Aislyn Arevalo</h5>
+                          </button>
+                      </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body custom-accordion-body">
+                                <ul class="list-unstyled custom-list">
+                                    <li><strong>Nombre:</strong> Aislyn</li>
+                                    <li><strong>Apellido:</strong> Arevalo</li>
+                                    <li><strong>Email:</strong> puerquis@gmail.com</li>
+                                    <li><strong>Teléfono:</strong> 0002-5681</li>
+                                    <li><strong>Nota:</strong> Hermana</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

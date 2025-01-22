@@ -12,15 +12,13 @@
     justify-content: center;
     gap: 100px; /* Espacio entre las cartas */
     flex-wrap: wrap; /* Asegura que las cartas se acomoden en varias filas si es necesario */
-    margin-top: 100px;
-
+    margin-top: 80px;
     margin-right: 100px;
     margin-left: 100px;
   }
 
   /* Estilo de cada columna */
 .col {
-    display: flex;
     justify-content: center; /* Centra las cartas dentro de la columna */
 }
   
@@ -39,14 +37,28 @@
   
   /* Ajuste de imagen dentro de la carta */
   .card-img-top {
-    height: 200px;
+    height: 255px;
     object-fit: cover; /* Hace que la imagen cubra el área sin deformarse */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
+  
 
   .navbar.navbar-dark.bg-dark {
     background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo negro con opacidad de 70% */
 }
 
+.imaa1{
+  position: relative;
+  width: 45px;
+  height: auto;
+  left: 80px;
+}
+
+.imaa2{
+  position: relative;
+  width: 45px;
+  height: auto;
+  left: 40px;
+}
   
