@@ -1,67 +1,80 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./login.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <section class="vh-100">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 text-black">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./login.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
 
-            
+  <div id="form">
 
-            <div class="form-container">
-              <form class="login-form" id="login-form">
+  <section class="vh-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 text-black">
+
+          
+
+          <div class="form-container">
+            <form class="login-form" id="login-form">
 
 
-                <h3 class="form-title">Iniciar Sesion</h3>
+              <h3 class="form-title">Iniciar Sesion</h3>
 
-                <div class="form-group">
-                  <input type="text" id="form2Example18" class="form-control form-control-lg" name="username" required/>
-                  <label class="form-label" for="form2Example18">Usuario</label>
-                </div>
+              <div class="form-group">
+                <input type="text" id="username1" class="form-control form-control-lg" name="username" required/>
+                <label class="form-label" for="form2Example18">Usuario</label>
+              </div>
 
-                <div class="form-group">
-                  <input type="email" id="form2Example18" class="form-control form-control-lg" name="email" required pattern=".*@.*" />
-                  <label class="form-label" for="form2Example18">Correo electronico</label>
-                </div>
+              <div class="form-group">
+                <input type="email" id="email1" class="form-control form-control-lg" name="email" required pattern=".*@.*" />
+                <label class="form-label" for="form2Example18">Correo electronico</label>
+              </div>
 
-                <div class="form-group">
-                  <input type="password" id="form2Example28" class="form-control form-control-lg" name="password" required/>
-                  <label class="form-label" for="form2Example28">Contraseña</label>
-                </div>
+              <div class="form-group">
+                <input type="password" id="password1" class="form-control form-control-lg" name="password" required/>
+                <label class="form-label" for="form2Example28">Contraseña</label>
+              </div>
 
-                <div class="form-button-container">
-                  <button class="btn btn-info btn-lg btn-block" type="submit">Acceso</button>
-                </div>
+              <div class="form-button-container">
+                <button class="btn btn-info btn-lg btn-block" type="submit">Acceso</button>
+              </div>
 
-                <p class="forgot-password"><a href="#!" class="text-muted">¿Has olvidado tu contraseña?</a></p>
-                <p class="register">¿No tienes una cuenta?<a href="#!" class="link-info">Regístrate aquí</a></p>
+              <p class="forgot-password"><a href="#!" class="text-muted">¿Has olvidado tu contraseña?</a></p>
+              <p class="register">¿No tienes una cuenta?<a href="#!" class="link-info">Regístrate aquí</a></p>
 
-                
-              </form>
-            </div>
-
+              
+            </form>
           </div>
-          <div class="col-sm-6 image-container">
-            <img src="assets/image/logoagenda.jpg" alt="Login image" class="image">
-          </div>
+
+        </div>
+        <div class="col-sm-6 image-container">
+          <img src="assets/image/logoagenda.jpg" alt="Login image" class="image">
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  </div>
 
-    <script>
-      document.getElementById("login-form").addEventListener("submit", function(event) {
-        event.preventDefault(); 
-        window.location.href = ""; // contactos
-      });
-    </script>
+  <script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+      event.preventDefault(); 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-  </html>
+      const username1 = document.getElementById("username1").value;
+      const email1 = document.getElementById("email1").value;
+      const password1= document.getElementById("password1").value;
+
+      localStorage.setItem("username1", username1);
+      localStorage.setItem("email1", email1);
+      localStorage.setItem("password1", password1);
+
+      window.location.href = "#"; // contactos
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
