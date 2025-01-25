@@ -20,7 +20,7 @@
 
 h1 {
     text-align: center;
-    color: white !important; /* Esto hará que las letras sean blancas */
+    color: white !important;
 }
 
 .task-form {
@@ -49,7 +49,7 @@ h1 {
     background: #0056b3;
 }
 
-/* Estilos específicos para la lista de tareas */
+
 .task-list {
     list-style: none;
     padding: 5px;
