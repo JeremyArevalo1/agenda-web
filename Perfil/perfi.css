@@ -1,0 +1,32 @@
+.bodyy {
+    background-image: url("assets/image/fondooo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.navbar.navbar-dark.bg-dark {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo negro con opacidad de 70% */
+}
+
+.custom-container{
+    padding: 80px;
+    
+}
+
+.rounded-circle{
+    border: 10px solid white;
+    width: 170px;
+}
+/* Estilo para la tarjeta con transparencia */
+.carddd {
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra sutil para darle profundidad */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque detrás del fondo (opcional) */
+    overflow: hidden; /* Para asegurar que todo se mantenga dentro de los bordes redondeados */
+}
+
+.textt{
+    color: white;
+}
